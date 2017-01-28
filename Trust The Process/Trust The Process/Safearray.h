@@ -36,19 +36,12 @@
 			 myVector1.insert(myVector1.end(), second);
 			 myVector1.insert(myVector1.end(), third);
 		 }
-		 f getValue1(f number) {
-			 float value = myVector1[number];
-			 return value;
-		 }
+		 f getValue1(f number);
 
 		template <class T> 
-		void count_sr(T first , T second , T third) {
-			 sr_ar = (first + second + third) / 3;	
-		}
+		void count_sr(T first, T second, T third);
 
-		double getSr_ar() {
-			return sr_ar;
-		}
+		double getSr_ar();
 
 
 
