@@ -1,0 +1,12 @@
+﻿  Ad_array.cpp
+f:\3\trust the process\trust the process\safearray.h(40): warning C4244: 'argument': conversion from 'f' to 'unsigned int', possible loss of data
+  Generating Code...
+  Compiling...
+  Trust.cpp
+f:\3\trust the process\trust the process\safearray.h(40): warning C4244: 'argument': conversion from 'f' to 'unsigned int', possible loss of data
+f:\3\trust the process\trust the process\trust.cpp(20): warning C4305: 'argument': truncation from 'double' to 'f'
+  Safearray.cpp
+f:\3\trust the process\trust the process\safearray.h(40): warning C4244: 'argument': conversion from 'f' to 'unsigned int', possible loss of data
+  Generating Code...
+  Trust The Process.vcxproj -> F:\3\Trust The Process\Debug\Trust The Process.exe
+  Trust The Process.vcxproj -> F:\3\Trust The Process\Debug\Trust The Process.pdb (Full PDB)
