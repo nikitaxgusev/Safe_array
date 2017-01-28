@@ -21,25 +21,17 @@
 		~Safearray();
 
 
-		void setElement(i first, i second,i third) {
-			myVector.insert(myVector.end(), first);
-			myVector.insert(myVector.end(), second);
-			myVector.insert(myVector.end(), third);
-		}
-		 i getValue(i number) {
-			int value = myVector[number];
-			return value;
-		}
+		void setElement(i first, i second, i third);
+		i getValue(i number);
 
-		 void setElement1(f first, f second, f third) {
-			 myVector1.insert(myVector1.end(), first);
-			 myVector1.insert(myVector1.end(), second);
-			 myVector1.insert(myVector1.end(), third);
-		 }
+		 void setElement1(f first, f second, f third);
 		 f getValue1(f number);
 
-		template <class T> 
-		void count_sr(T first, T second, T third);
+
+		 template <class T>
+		 void Safearray::count_sr(T first, T second, T third) {
+			 sr_ar = (first + second + third) / 3;
+		 }
 
 		double getSr_ar();
 
