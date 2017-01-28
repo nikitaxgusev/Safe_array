@@ -3,7 +3,8 @@
 #include <vector>
 #include <iostream>
 
-
+// Why are you using so mush tabs?
+// I prefer using less of them...
 
 
 	typedef int i;

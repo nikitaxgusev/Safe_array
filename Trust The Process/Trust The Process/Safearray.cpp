@@ -2,6 +2,8 @@
 #include <vector>
 #include <iostream>
 
+//here you can see my changes
+
 
 typedef int i;
 typedef float f;
@@ -29,3 +31,5 @@ typedef float f;
 	double Safearray::getSr_ar() {
 		return sr_ar;
 	}
+	
+//here is another comment
