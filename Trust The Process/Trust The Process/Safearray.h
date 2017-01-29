@@ -3,38 +3,52 @@
 #include <vector>
 #include <iostream>
 
-
-
-
 	typedef int i;
  	typedef float f;
 
+	template <class T>
 	class Safearray
 	{
 	protected:
-	std::vector<i> myVector;
-	std::vector <f> myVector1;
-	double sr_ar;
-	public:
-		
-		Safearray();
-		~Safearray();
+	std::vector<T> myVector;
+	T sr_ar;
+	public:	
+		Safearray<T>::Safearray()
+		{
+			int S;
+			std::cout << "Enter the SIZE: ";
+			std::cin >> S;
+			T number;
+			for (int i = 0; i < S; i++) {
+				std::cout << "Enter a NUMBER for a VECTOR: ";
+				std::cin >> number;
+				myVector.insert(myVector.end(), number);
+			}
+		std::cout<<std::endl;
+		}
 
+		Safearray<T>::~Safearray()
+		{
+			std::cout << "Exit.." << std::endl;
+		}
 
-		void setElement(i first, i second, i third);
-		i getValue(i number);
+		void printVector() {
+			std::cout <<"Elements: " <<std::endl;
+			for (int i = 0; i < myVector.size(); i++){
+				std::cout <<" "<<myVector[i];}
+			std::cout<<std::endl;
+		}
 
-		 void setElement1(f first, f second, f third);
-		 f getValue1(f number);
-
-
-		 template <class T>
-		 void Safearray::count_sr(T first, T second, T third) {
-			 sr_ar = (first + second + third) / 3;
+		 void count_sr() {
+			 for (int i = 0; i < myVector.size(); i++) {
+				 sr_ar += myVector[i];
+			 }
+			 sr_ar /= myVector.size();
 		 }
 
-		double getSr_ar();
-
+		 T getSr_ar() {
+			 return sr_ar;
+		 }
 
 
 	};

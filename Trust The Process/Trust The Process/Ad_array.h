@@ -1,19 +1,22 @@
 #pragma once
 #include "Safearray.h"
 #pragma once
-
-class Ad_array : public Safearray
+template <class T>
+class Ad_array : public Safearray <T>
 {
 public:
-	template <class T>
-	void Sqr(T first, T second, T third) {
-		int a, b, c;
-		a = first*first;
-		b = second * second;
-		c = third * third;
-		std::cout << "Sqr of A: " << a << std::endl;
-		std::cout << "Sqr of B: " << b << std::endl;
-		std::cout << "Sqe of C: " << c << std::endl;
+	void Sqr() {
+		std::cout << "Square root:";
+		for (int i = 0; i < myVector.size(); i++){
+			PrintSqr<T>(myVector[i] * myVector[i]);}
+			std::cout << std::endl;
 	}
+
+	template <class T>
+	void PrintSqr(T Sqr) {
+		std::cout <<" "<< Sqr;
+	}
+
+
 };
 
