@@ -1,13 +1,12 @@
 ﻿  Trust.cpp
-f:\vector\trust the process\trust the process\safearray.h(43): warning C4018: '<': signed/unsigned mismatch
-  f:\vector\trust the process\trust the process\safearray.h(42): note: while compiling class template member function 'void Safearray<f>::count_sr(void)'
-  f:\vector\trust the process\trust the process\trust.cpp(22): note: see reference to function template instantiation 'void Safearray<f>::count_sr(void)' being compiled
-  f:\vector\trust the process\trust the process\trust.cpp(20): note: see reference to class template instantiation 'Safearray<f>' being compiled
-f:\vector\trust the process\trust the process\safearray.h(37): warning C4018: '<': signed/unsigned mismatch
-  f:\vector\trust the process\trust the process\safearray.h(35): note: while compiling class template member function 'void Safearray<f>::printVector(void)'
-  f:\vector\trust the process\trust the process\trust.cpp(21): note: see reference to function template instantiation 'void Safearray<f>::printVector(void)' being compiled
+f:\vector\trust the process\trust the process\safearray.h(38): warning C4018: '<': signed/unsigned mismatch
+  f:\vector\trust the process\trust the process\safearray.h(36): note: while compiling class template member function 'void Safearray<f>::printVector(void)'
+  f:\vector\trust the process\trust the process\trust.cpp(15): note: see reference to function template instantiation 'void Safearray<f>::printVector(void)' being compiled
+  f:\vector\trust the process\trust the process\trust.cpp(14): note: see reference to class template instantiation 'Safearray<f>' being compiled
 f:\vector\trust the process\trust the process\ad_array.h(10): warning C4018: '<': signed/unsigned mismatch
   f:\vector\trust the process\trust the process\ad_array.h(8): note: while compiling class template member function 'void Ad_array<i>::Sqr(void)'
-  f:\vector\trust the process\trust the process\trust.cpp(16): note: see reference to function template instantiation 'void Ad_array<i>::Sqr(void)' being compiled
+  f:\vector\trust the process\trust the process\trust.cpp(10): note: see reference to function template instantiation 'void Ad_array<i>::Sqr(void)' being compiled
+  Safearray.cpp
+  Generating Code...
   Trust The Process.vcxproj -> F:\Vector\Trust The Process\Debug\Trust The Process.exe
   Trust The Process.vcxproj -> F:\Vector\Trust The Process\Debug\Trust The Process.pdb (Full PDB)

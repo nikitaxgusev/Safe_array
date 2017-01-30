@@ -1,5 +1,4 @@
 #pragma once
-
 #include <vector>
 #include <iostream>
 
@@ -23,7 +22,9 @@
 				std::cout << "Enter a NUMBER for a VECTOR: ";
 				std::cin >> number;
 				myVector.insert(myVector.end(), number);
+				sr_ar += myVector[i];
 			}
+			sr_ar /= myVector.size();
 		std::cout<<std::endl;
 		}
 
@@ -39,18 +40,9 @@
 			std::cout<<std::endl;
 		}
 
-		 void count_sr() {
-			 for (int i = 0; i < myVector.size(); i++) {
-				 sr_ar += myVector[i];
-			 }
-			 sr_ar /= myVector.size();
-		 }
-
 		 T getSr_ar() {
 			 return sr_ar;
 		 }
-
-
 	};
 
 
